@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMULADO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <p class="display-4 "><b>Simulado</b></p>
+
+        <div class="row d-flex justify-content-between flex-row ">
+            <View class="col-6">
+                <h5>Nome:</h5>
+                <Input id="nome" class="form-control">
+            </View>
+            <View class="col-6">
+                <h5>Idade:</h5>
+                <Input id="idade" class="form-control">
+            </View>
+
+        </div>
+        <div class="row d-flex justify-content-between flex-row mt-2">
+            <View class="col-6">
+                <h5>Sexo:</h5>
+                <select id="sexo" class="form-control">
+                    <option value="Selecione...">Selecione...</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+            </View>
+        </div>
+        <div class="mt-2">
+            <button type="button" onclick=cadastrar() class="btn btn-primary btn-lg">Cadastrar</button>
+        </div>
+        <div class="row mt-5">
+            <p class="display-5 "><b>Filtro</b></p>
+        </div>
+        <div class="row d-flex justify-content-between flex-row mt-2">
+            <View class="col-6">
+                <h5>Selecione uma opção:</h5>
+                <select id="filtro" class="form-control">
+                    <option value="Selecione...">Selecione...</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Todos">Todos</option>
+                </select>
+            </View>
+        </div>
+        <div class="mt-2">
+            <button type="button" onclick=pesquisar() class="btn btn-primary btn-lg">Pesquisar</button>
+        </div>
+
+        <div class="row col-12 d-flex justify-content-between flex-row">
+            <div class="mt-5 col-7">
+                <div class="d-flex justify-content-between text-start flex-row">
+                    <b class="fs-6">NOME:</b><b class="fs-6">IDADE:</b><b class="fs-6">SEXO:</b><b class="fs-6"> </b>
+                </div>
+                <hr>
+                <div id="lista">
+    
+                </div>
+            </div>
+            <div class="col-3 text-center">
+                <h3 class="text-success">Total de Registros</h3>
+                <p id="totalRegistros">0</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <script src="src/script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
